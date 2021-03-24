@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="./src/js/script.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./src/js/script.js"></script>
+    <title>Document</title>
+  </head>
+  <body style="font-family: sans-serif;">
+    <div style="border: 1px solid black; display: inline-block; padding: 10px">
+      <h2>Task 1</h2>
+      <form action="">
+        <input type="number" id="month_input" />
+        <span id="decade"></span>
+        <button type="button" id="month_btn">Check</button>
+      </form>
+    </div>
+
+    <br>
+
+    <div style="border: 1px solid black; display: inline-block; padding: 10px; margin-top: 10px;">
+      <h1>Simple calculator</h1>
+      <form action="" id="calc_form">
+        <input type="number" id="num1" required/>
+        <select id="operation">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="mltply">*</option>
+          <option value="divide">/</option>
+          <option value="mod">%</option>
+        </select>
+        <input type="number" id="num2" required/> <br /><br />
+        <button type="button" id="calc_btn">Calculate</button>
+        <button type="reset">Clear</button>
+        <h2>Result:</h2>
+        <input type="text" id="result" readonly />
+      </form>
+    </div>
+  </body>
 </html>
